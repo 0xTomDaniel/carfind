@@ -1,0 +1,902 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		722DA031F0D0711760F691BE /* Pods_carfind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A03B10F488966515B4A82A0 /* Pods_carfind.framework */; };
+		CC5C4E6120F14E53008D3DA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4E6020F14E53008D3DA5 /* AppDelegate.swift */; };
+		CC5C4E6320F14E53008D3DA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4E6220F14E53008D3DA5 /* ViewController.swift */; };
+		CC5C4E6620F14E53008D3DA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5C4E6420F14E53008D3DA5 /* Main.storyboard */; };
+		CC5C4E6820F14E56008D3DA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC5C4E6720F14E56008D3DA5 /* Assets.xcassets */; };
+		CC5C4E6B20F14E56008D3DA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5C4E6920F14E56008D3DA5 /* LaunchScreen.storyboard */; };
+		CC5C4E7620F14E56008D3DA5 /* carfindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4E7520F14E56008D3DA5 /* carfindTests.swift */; };
+		CC5C4E8120F14E56008D3DA5 /* carfindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4E8020F14E56008D3DA5 /* carfindUITests.swift */; };
+		CC5C4ECA20F14F34008D3DA5 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4E9320F14F34008D3DA5 /* APIHelper.swift */; };
+		CC5C4ECB20F14F34008D3DA5 /* AlamofireImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4E9420F14F34008D3DA5 /* AlamofireImplementations.swift */; };
+		CC5C4ECC20F14F34008D3DA5 /* FacetsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4E9620F14F34008D3DA5 /* FacetsAPI.swift */; };
+		CC5C4ECD20F14F34008D3DA5 /* GraphsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4E9720F14F34008D3DA5 /* GraphsAPI.swift */; };
+		CC5C4ECE20F14F34008D3DA5 /* MarketAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4E9820F14F34008D3DA5 /* MarketAPI.swift */; };
+		CC5C4ECF20F14F34008D3DA5 /* ListingsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4E9920F14F34008D3DA5 /* ListingsAPI.swift */; };
+		CC5C4ED020F14F34008D3DA5 /* HistoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4E9A20F14F34008D3DA5 /* HistoryAPI.swift */; };
+		CC5C4ED120F14F34008D3DA5 /* VINDecoderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4E9B20F14F34008D3DA5 /* VINDecoderAPI.swift */; };
+		CC5C4ED220F14F34008D3DA5 /* InventoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4E9C20F14F34008D3DA5 /* InventoryAPI.swift */; };
+		CC5C4ED320F14F34008D3DA5 /* DealerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4E9D20F14F34008D3DA5 /* DealerAPI.swift */; };
+		CC5C4ED420F14F34008D3DA5 /* CodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4E9E20F14F34008D3DA5 /* CodableHelper.swift */; };
+		CC5C4ED520F14F34008D3DA5 /* JSONEncodableEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4E9F20F14F34008D3DA5 /* JSONEncodableEncoding.swift */; };
+		CC5C4ED620F14F34008D3DA5 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EA020F14F34008D3DA5 /* APIs.swift */; };
+		CC5C4ED720F14F34008D3DA5 /* Dealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EA220F14F34008D3DA5 /* Dealer.swift */; };
+		CC5C4ED820F14F34008D3DA5 /* ListingExtraAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EA320F14F34008D3DA5 /* ListingExtraAttributes.swift */; };
+		CC5C4ED920F14F34008D3DA5 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EA420F14F34008D3DA5 /* Location.swift */; };
+		CC5C4EDA20F14F34008D3DA5 /* ListingVDP.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EA520F14F34008D3DA5 /* ListingVDP.swift */; };
+		CC5C4EDB20F14F34008D3DA5 /* CompetitorsPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EA620F14F34008D3DA5 /* CompetitorsPoint.swift */; };
+		CC5C4EDC20F14F34008D3DA5 /* Averages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EA720F14F34008D3DA5 /* Averages.swift */; };
+		CC5C4EDD20F14F34008D3DA5 /* DealerRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EA820F14F34008D3DA5 /* DealerRating.swift */; };
+		CC5C4EDE20F14F34008D3DA5 /* DealersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EA920F14F34008D3DA5 /* DealersResponse.swift */; };
+		CC5C4EDF20F14F34008D3DA5 /* CompetitorsSimilarCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EAA20F14F34008D3DA5 /* CompetitorsSimilarCars.swift */; };
+		CC5C4EE020F14F34008D3DA5 /* CompetitorsCarDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EAB20F14F34008D3DA5 /* CompetitorsCarDetails.swift */; };
+		CC5C4EE120F14F34008D3DA5 /* CompetitorsSameCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EAC20F14F34008D3DA5 /* CompetitorsSameCars.swift */; };
+		CC5C4EE220F14F34008D3DA5 /* BaseListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EAD20F14F34008D3DA5 /* BaseListing.swift */; };
+		CC5C4EE320F14F34008D3DA5 /* SafetyRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EAE20F14F34008D3DA5 /* SafetyRating.swift */; };
+		CC5C4EE420F14F34008D3DA5 /* FacetItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EAF20F14F34008D3DA5 /* FacetItem.swift */; };
+		CC5C4EE520F14F34008D3DA5 /* Mds.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EB020F14F34008D3DA5 /* Mds.swift */; };
+		CC5C4EE620F14F34008D3DA5 /* PlotPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EB120F14F34008D3DA5 /* PlotPoint.swift */; };
+		CC5C4EE720F14F34008D3DA5 /* DealerReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EB220F14F34008D3DA5 /* DealerReview.swift */; };
+		CC5C4EE820F14F34008D3DA5 /* ComparisonPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EB320F14F34008D3DA5 /* ComparisonPoint.swift */; };
+		CC5C4EE920F14F34008D3DA5 /* ListingMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EB420F14F34008D3DA5 /* ListingMedia.swift */; };
+		CC5C4EEA20F14F34008D3DA5 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EB520F14F34008D3DA5 /* SearchResponse.swift */; };
+		CC5C4EEB20F14F34008D3DA5 /* ModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EB620F14F34008D3DA5 /* ModelError.swift */; };
+		CC5C4EEC20F14F34008D3DA5 /* HistoricalListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EB720F14F34008D3DA5 /* HistoricalListing.swift */; };
+		CC5C4EED20F14F34008D3DA5 /* DepreciationStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EB820F14F34008D3DA5 /* DepreciationStats.swift */; };
+		CC5C4EEE20F14F34008D3DA5 /* Economy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EB920F14F34008D3DA5 /* Economy.swift */; };
+		CC5C4EEF20F14F34008D3DA5 /* Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EBA20F14F34008D3DA5 /* Build.swift */; };
+		CC5C4EF020F14F34008D3DA5 /* MakeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EBB20F14F34008D3DA5 /* MakeModel.swift */; };
+		CC5C4EF120F14F34008D3DA5 /* DealerLandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EBC20F14F34008D3DA5 /* DealerLandingPage.swift */; };
+		CC5C4EF220F14F34008D3DA5 /* VinReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EBD20F14F34008D3DA5 /* VinReport.swift */; };
+		CC5C4EF320F14F34008D3DA5 /* PopularityItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EBE20F14F34008D3DA5 /* PopularityItem.swift */; };
+		CC5C4EF420F14F34008D3DA5 /* ReviewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EBF20F14F34008D3DA5 /* ReviewComponents.swift */; };
+		CC5C4EF520F14F34008D3DA5 /* DepreciationPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EC020F14F34008D3DA5 /* DepreciationPoint.swift */; };
+		CC5C4EF620F14F34008D3DA5 /* RatingComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EC120F14F34008D3DA5 /* RatingComponents.swift */; };
+		CC5C4EF720F14F34008D3DA5 /* FuelEfficiency.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EC220F14F34008D3DA5 /* FuelEfficiency.swift */; };
+		CC5C4EF820F14F34008D3DA5 /* TrendPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EC320F14F34008D3DA5 /* TrendPoint.swift */; };
+		CC5C4EF920F14F34008D3DA5 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EC420F14F34008D3DA5 /* Listing.swift */; };
+		CC5C4EFA20F14F34008D3DA5 /* ListingDebugAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EC520F14F34008D3DA5 /* ListingDebugAttributes.swift */; };
+		CC5C4EFB20F14F34008D3DA5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EC620F14F34008D3DA5 /* Extensions.swift */; };
+		CC5C4EFC20F14F34008D3DA5 /* JSONEncodingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EC720F14F34008D3DA5 /* JSONEncodingHelper.swift */; };
+		CC5C4EFD20F14F34008D3DA5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EC820F14F34008D3DA5 /* Models.swift */; };
+		CC5C4EFE20F14F34008D3DA5 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C4EC920F14F34008D3DA5 /* Configuration.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC5C4E7220F14E56008D3DA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC5C4E5520F14E53008D3DA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC5C4E5C20F14E53008D3DA5;
+			remoteInfo = carfind;
+		};
+		CC5C4E7D20F14E56008D3DA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC5C4E5520F14E53008D3DA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC5C4E5C20F14E53008D3DA5;
+			remoteInfo = carfind;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		003DE7F1F033A7375E9B71EF /* Pods-carfind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-carfind.release.xcconfig"; path = "Pods/Target Support Files/Pods-carfind/Pods-carfind.release.xcconfig"; sourceTree = "<group>"; };
+		16CA7019210781FB458F854A /* Pods-carfind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-carfind.debug.xcconfig"; path = "Pods/Target Support Files/Pods-carfind/Pods-carfind.debug.xcconfig"; sourceTree = "<group>"; };
+		9A03B10F488966515B4A82A0 /* Pods_carfind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_carfind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC5C4E5D20F14E53008D3DA5 /* carfind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carfind.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC5C4E6020F14E53008D3DA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC5C4E6220F14E53008D3DA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC5C4E6520F14E53008D3DA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC5C4E6720F14E56008D3DA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC5C4E6A20F14E56008D3DA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC5C4E6C20F14E56008D3DA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC5C4E7120F14E56008D3DA5 /* carfindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = carfindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC5C4E7520F14E56008D3DA5 /* carfindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carfindTests.swift; sourceTree = "<group>"; };
+		CC5C4E7720F14E56008D3DA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC5C4E7C20F14E56008D3DA5 /* carfindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = carfindUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC5C4E8020F14E56008D3DA5 /* carfindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carfindUITests.swift; sourceTree = "<group>"; };
+		CC5C4E8220F14E56008D3DA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC5C4E9320F14F34008D3DA5 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		CC5C4E9420F14F34008D3DA5 /* AlamofireImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireImplementations.swift; sourceTree = "<group>"; };
+		CC5C4E9620F14F34008D3DA5 /* FacetsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacetsAPI.swift; sourceTree = "<group>"; };
+		CC5C4E9720F14F34008D3DA5 /* GraphsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphsAPI.swift; sourceTree = "<group>"; };
+		CC5C4E9820F14F34008D3DA5 /* MarketAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketAPI.swift; sourceTree = "<group>"; };
+		CC5C4E9920F14F34008D3DA5 /* ListingsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingsAPI.swift; sourceTree = "<group>"; };
+		CC5C4E9A20F14F34008D3DA5 /* HistoryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryAPI.swift; sourceTree = "<group>"; };
+		CC5C4E9B20F14F34008D3DA5 /* VINDecoderAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VINDecoderAPI.swift; sourceTree = "<group>"; };
+		CC5C4E9C20F14F34008D3DA5 /* InventoryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryAPI.swift; sourceTree = "<group>"; };
+		CC5C4E9D20F14F34008D3DA5 /* DealerAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealerAPI.swift; sourceTree = "<group>"; };
+		CC5C4E9E20F14F34008D3DA5 /* CodableHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableHelper.swift; sourceTree = "<group>"; };
+		CC5C4E9F20F14F34008D3DA5 /* JSONEncodableEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodableEncoding.swift; sourceTree = "<group>"; };
+		CC5C4EA020F14F34008D3DA5 /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
+		CC5C4EA220F14F34008D3DA5 /* Dealer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dealer.swift; sourceTree = "<group>"; };
+		CC5C4EA320F14F34008D3DA5 /* ListingExtraAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingExtraAttributes.swift; sourceTree = "<group>"; };
+		CC5C4EA420F14F34008D3DA5 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		CC5C4EA520F14F34008D3DA5 /* ListingVDP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingVDP.swift; sourceTree = "<group>"; };
+		CC5C4EA620F14F34008D3DA5 /* CompetitorsPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitorsPoint.swift; sourceTree = "<group>"; };
+		CC5C4EA720F14F34008D3DA5 /* Averages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Averages.swift; sourceTree = "<group>"; };
+		CC5C4EA820F14F34008D3DA5 /* DealerRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealerRating.swift; sourceTree = "<group>"; };
+		CC5C4EA920F14F34008D3DA5 /* DealersResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealersResponse.swift; sourceTree = "<group>"; };
+		CC5C4EAA20F14F34008D3DA5 /* CompetitorsSimilarCars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitorsSimilarCars.swift; sourceTree = "<group>"; };
+		CC5C4EAB20F14F34008D3DA5 /* CompetitorsCarDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitorsCarDetails.swift; sourceTree = "<group>"; };
+		CC5C4EAC20F14F34008D3DA5 /* CompetitorsSameCars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitorsSameCars.swift; sourceTree = "<group>"; };
+		CC5C4EAD20F14F34008D3DA5 /* BaseListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseListing.swift; sourceTree = "<group>"; };
+		CC5C4EAE20F14F34008D3DA5 /* SafetyRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafetyRating.swift; sourceTree = "<group>"; };
+		CC5C4EAF20F14F34008D3DA5 /* FacetItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacetItem.swift; sourceTree = "<group>"; };
+		CC5C4EB020F14F34008D3DA5 /* Mds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mds.swift; sourceTree = "<group>"; };
+		CC5C4EB120F14F34008D3DA5 /* PlotPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlotPoint.swift; sourceTree = "<group>"; };
+		CC5C4EB220F14F34008D3DA5 /* DealerReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealerReview.swift; sourceTree = "<group>"; };
+		CC5C4EB320F14F34008D3DA5 /* ComparisonPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComparisonPoint.swift; sourceTree = "<group>"; };
+		CC5C4EB420F14F34008D3DA5 /* ListingMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingMedia.swift; sourceTree = "<group>"; };
+		CC5C4EB520F14F34008D3DA5 /* SearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		CC5C4EB620F14F34008D3DA5 /* ModelError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelError.swift; sourceTree = "<group>"; };
+		CC5C4EB720F14F34008D3DA5 /* HistoricalListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricalListing.swift; sourceTree = "<group>"; };
+		CC5C4EB820F14F34008D3DA5 /* DepreciationStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepreciationStats.swift; sourceTree = "<group>"; };
+		CC5C4EB920F14F34008D3DA5 /* Economy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Economy.swift; sourceTree = "<group>"; };
+		CC5C4EBA20F14F34008D3DA5 /* Build.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Build.swift; sourceTree = "<group>"; };
+		CC5C4EBB20F14F34008D3DA5 /* MakeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeModel.swift; sourceTree = "<group>"; };
+		CC5C4EBC20F14F34008D3DA5 /* DealerLandingPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealerLandingPage.swift; sourceTree = "<group>"; };
+		CC5C4EBD20F14F34008D3DA5 /* VinReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VinReport.swift; sourceTree = "<group>"; };
+		CC5C4EBE20F14F34008D3DA5 /* PopularityItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularityItem.swift; sourceTree = "<group>"; };
+		CC5C4EBF20F14F34008D3DA5 /* ReviewComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewComponents.swift; sourceTree = "<group>"; };
+		CC5C4EC020F14F34008D3DA5 /* DepreciationPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepreciationPoint.swift; sourceTree = "<group>"; };
+		CC5C4EC120F14F34008D3DA5 /* RatingComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingComponents.swift; sourceTree = "<group>"; };
+		CC5C4EC220F14F34008D3DA5 /* FuelEfficiency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuelEfficiency.swift; sourceTree = "<group>"; };
+		CC5C4EC320F14F34008D3DA5 /* TrendPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendPoint.swift; sourceTree = "<group>"; };
+		CC5C4EC420F14F34008D3DA5 /* Listing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
+		CC5C4EC520F14F34008D3DA5 /* ListingDebugAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingDebugAttributes.swift; sourceTree = "<group>"; };
+		CC5C4EC620F14F34008D3DA5 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CC5C4EC720F14F34008D3DA5 /* JSONEncodingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodingHelper.swift; sourceTree = "<group>"; };
+		CC5C4EC820F14F34008D3DA5 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		CC5C4EC920F14F34008D3DA5 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC5C4E5A20F14E53008D3DA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				722DA031F0D0711760F691BE /* Pods_carfind.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC5C4E6E20F14E56008D3DA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC5C4E7920F14E56008D3DA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87CCC6A7BC09549E90CBECF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16CA7019210781FB458F854A /* Pods-carfind.debug.xcconfig */,
+				003DE7F1F033A7375E9B71EF /* Pods-carfind.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8FFCDB3009B430D28765EE17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A03B10F488966515B4A82A0 /* Pods_carfind.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC5C4E5420F14E53008D3DA5 = {
+			isa = PBXGroup;
+			children = (
+				CC5C4E5F20F14E53008D3DA5 /* carfind */,
+				CC5C4E7420F14E56008D3DA5 /* carfindTests */,
+				CC5C4E7F20F14E56008D3DA5 /* carfindUITests */,
+				CC5C4E5E20F14E53008D3DA5 /* Products */,
+				87CCC6A7BC09549E90CBECF6 /* Pods */,
+				8FFCDB3009B430D28765EE17 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CC5C4E5E20F14E53008D3DA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC5C4E5D20F14E53008D3DA5 /* carfind.app */,
+				CC5C4E7120F14E56008D3DA5 /* carfindTests.xctest */,
+				CC5C4E7C20F14E56008D3DA5 /* carfindUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC5C4E5F20F14E53008D3DA5 /* carfind */ = {
+			isa = PBXGroup;
+			children = (
+				CC5C4E9020F14F34008D3DA5 /* MarketcheckCarsApi */,
+				CC5C4E6020F14E53008D3DA5 /* AppDelegate.swift */,
+				CC5C4E6220F14E53008D3DA5 /* ViewController.swift */,
+				CC5C4E6420F14E53008D3DA5 /* Main.storyboard */,
+				CC5C4E6720F14E56008D3DA5 /* Assets.xcassets */,
+				CC5C4E6920F14E56008D3DA5 /* LaunchScreen.storyboard */,
+				CC5C4E6C20F14E56008D3DA5 /* Info.plist */,
+			);
+			path = carfind;
+			sourceTree = "<group>";
+		};
+		CC5C4E7420F14E56008D3DA5 /* carfindTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC5C4E7520F14E56008D3DA5 /* carfindTests.swift */,
+				CC5C4E7720F14E56008D3DA5 /* Info.plist */,
+			);
+			path = carfindTests;
+			sourceTree = "<group>";
+		};
+		CC5C4E7F20F14E56008D3DA5 /* carfindUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC5C4E8020F14E56008D3DA5 /* carfindUITests.swift */,
+				CC5C4E8220F14E56008D3DA5 /* Info.plist */,
+			);
+			path = carfindUITests;
+			sourceTree = "<group>";
+		};
+		CC5C4E9020F14F34008D3DA5 /* MarketcheckCarsApi */ = {
+			isa = PBXGroup;
+			children = (
+				CC5C4E9120F14F34008D3DA5 /* Classes */,
+			);
+			path = MarketcheckCarsApi;
+			sourceTree = "<group>";
+		};
+		CC5C4E9120F14F34008D3DA5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CC5C4E9220F14F34008D3DA5 /* Api */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CC5C4E9220F14F34008D3DA5 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				CC5C4E9320F14F34008D3DA5 /* APIHelper.swift */,
+				CC5C4E9420F14F34008D3DA5 /* AlamofireImplementations.swift */,
+				CC5C4E9520F14F34008D3DA5 /* APIs */,
+				CC5C4E9E20F14F34008D3DA5 /* CodableHelper.swift */,
+				CC5C4E9F20F14F34008D3DA5 /* JSONEncodableEncoding.swift */,
+				CC5C4EA020F14F34008D3DA5 /* APIs.swift */,
+				CC5C4EA120F14F34008D3DA5 /* Models */,
+				CC5C4EC620F14F34008D3DA5 /* Extensions.swift */,
+				CC5C4EC720F14F34008D3DA5 /* JSONEncodingHelper.swift */,
+				CC5C4EC820F14F34008D3DA5 /* Models.swift */,
+				CC5C4EC920F14F34008D3DA5 /* Configuration.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		CC5C4E9520F14F34008D3DA5 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				CC5C4E9620F14F34008D3DA5 /* FacetsAPI.swift */,
+				CC5C4E9720F14F34008D3DA5 /* GraphsAPI.swift */,
+				CC5C4E9820F14F34008D3DA5 /* MarketAPI.swift */,
+				CC5C4E9920F14F34008D3DA5 /* ListingsAPI.swift */,
+				CC5C4E9A20F14F34008D3DA5 /* HistoryAPI.swift */,
+				CC5C4E9B20F14F34008D3DA5 /* VINDecoderAPI.swift */,
+				CC5C4E9C20F14F34008D3DA5 /* InventoryAPI.swift */,
+				CC5C4E9D20F14F34008D3DA5 /* DealerAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		CC5C4EA120F14F34008D3DA5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC5C4EA220F14F34008D3DA5 /* Dealer.swift */,
+				CC5C4EA320F14F34008D3DA5 /* ListingExtraAttributes.swift */,
+				CC5C4EA420F14F34008D3DA5 /* Location.swift */,
+				CC5C4EA520F14F34008D3DA5 /* ListingVDP.swift */,
+				CC5C4EA620F14F34008D3DA5 /* CompetitorsPoint.swift */,
+				CC5C4EA720F14F34008D3DA5 /* Averages.swift */,
+				CC5C4EA820F14F34008D3DA5 /* DealerRating.swift */,
+				CC5C4EA920F14F34008D3DA5 /* DealersResponse.swift */,
+				CC5C4EAA20F14F34008D3DA5 /* CompetitorsSimilarCars.swift */,
+				CC5C4EAB20F14F34008D3DA5 /* CompetitorsCarDetails.swift */,
+				CC5C4EAC20F14F34008D3DA5 /* CompetitorsSameCars.swift */,
+				CC5C4EAD20F14F34008D3DA5 /* BaseListing.swift */,
+				CC5C4EAE20F14F34008D3DA5 /* SafetyRating.swift */,
+				CC5C4EAF20F14F34008D3DA5 /* FacetItem.swift */,
+				CC5C4EB020F14F34008D3DA5 /* Mds.swift */,
+				CC5C4EB120F14F34008D3DA5 /* PlotPoint.swift */,
+				CC5C4EB220F14F34008D3DA5 /* DealerReview.swift */,
+				CC5C4EB320F14F34008D3DA5 /* ComparisonPoint.swift */,
+				CC5C4EB420F14F34008D3DA5 /* ListingMedia.swift */,
+				CC5C4EB520F14F34008D3DA5 /* SearchResponse.swift */,
+				CC5C4EB620F14F34008D3DA5 /* ModelError.swift */,
+				CC5C4EB720F14F34008D3DA5 /* HistoricalListing.swift */,
+				CC5C4EB820F14F34008D3DA5 /* DepreciationStats.swift */,
+				CC5C4EB920F14F34008D3DA5 /* Economy.swift */,
+				CC5C4EBA20F14F34008D3DA5 /* Build.swift */,
+				CC5C4EBB20F14F34008D3DA5 /* MakeModel.swift */,
+				CC5C4EBC20F14F34008D3DA5 /* DealerLandingPage.swift */,
+				CC5C4EBD20F14F34008D3DA5 /* VinReport.swift */,
+				CC5C4EBE20F14F34008D3DA5 /* PopularityItem.swift */,
+				CC5C4EBF20F14F34008D3DA5 /* ReviewComponents.swift */,
+				CC5C4EC020F14F34008D3DA5 /* DepreciationPoint.swift */,
+				CC5C4EC120F14F34008D3DA5 /* RatingComponents.swift */,
+				CC5C4EC220F14F34008D3DA5 /* FuelEfficiency.swift */,
+				CC5C4EC320F14F34008D3DA5 /* TrendPoint.swift */,
+				CC5C4EC420F14F34008D3DA5 /* Listing.swift */,
+				CC5C4EC520F14F34008D3DA5 /* ListingDebugAttributes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC5C4E5C20F14E53008D3DA5 /* carfind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC5C4E8520F14E56008D3DA5 /* Build configuration list for PBXNativeTarget "carfind" */;
+			buildPhases = (
+				C67E6216DB969259F527E353 /* [CP] Check Pods Manifest.lock */,
+				CC5C4E5920F14E53008D3DA5 /* Sources */,
+				CC5C4E5A20F14E53008D3DA5 /* Frameworks */,
+				CC5C4E5B20F14E53008D3DA5 /* Resources */,
+				FBA75D015A32BA6A39469405 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = carfind;
+			productName = carfind;
+			productReference = CC5C4E5D20F14E53008D3DA5 /* carfind.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC5C4E7020F14E56008D3DA5 /* carfindTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC5C4E8820F14E56008D3DA5 /* Build configuration list for PBXNativeTarget "carfindTests" */;
+			buildPhases = (
+				CC5C4E6D20F14E56008D3DA5 /* Sources */,
+				CC5C4E6E20F14E56008D3DA5 /* Frameworks */,
+				CC5C4E6F20F14E56008D3DA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC5C4E7320F14E56008D3DA5 /* PBXTargetDependency */,
+			);
+			name = carfindTests;
+			productName = carfindTests;
+			productReference = CC5C4E7120F14E56008D3DA5 /* carfindTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC5C4E7B20F14E56008D3DA5 /* carfindUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC5C4E8B20F14E56008D3DA5 /* Build configuration list for PBXNativeTarget "carfindUITests" */;
+			buildPhases = (
+				CC5C4E7820F14E56008D3DA5 /* Sources */,
+				CC5C4E7920F14E56008D3DA5 /* Frameworks */,
+				CC5C4E7A20F14E56008D3DA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC5C4E7E20F14E56008D3DA5 /* PBXTargetDependency */,
+			);
+			name = carfindUITests;
+			productName = carfindUITests;
+			productReference = CC5C4E7C20F14E56008D3DA5 /* carfindUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC5C4E5520F14E53008D3DA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Tom Daniel";
+				TargetAttributes = {
+					CC5C4E5C20F14E53008D3DA5 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					CC5C4E7020F14E56008D3DA5 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = CC5C4E5C20F14E53008D3DA5;
+					};
+					CC5C4E7B20F14E56008D3DA5 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = CC5C4E5C20F14E53008D3DA5;
+					};
+				};
+			};
+			buildConfigurationList = CC5C4E5820F14E53008D3DA5 /* Build configuration list for PBXProject "carfind" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC5C4E5420F14E53008D3DA5;
+			productRefGroup = CC5C4E5E20F14E53008D3DA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC5C4E5C20F14E53008D3DA5 /* carfind */,
+				CC5C4E7020F14E56008D3DA5 /* carfindTests */,
+				CC5C4E7B20F14E56008D3DA5 /* carfindUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC5C4E5B20F14E53008D3DA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC5C4E6B20F14E56008D3DA5 /* LaunchScreen.storyboard in Resources */,
+				CC5C4E6820F14E56008D3DA5 /* Assets.xcassets in Resources */,
+				CC5C4E6620F14E53008D3DA5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC5C4E6F20F14E56008D3DA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC5C4E7A20F14E56008D3DA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C67E6216DB969259F527E353 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-carfind-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBA75D015A32BA6A39469405 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-carfind/Pods-carfind-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-carfind/Pods-carfind-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC5C4E5920F14E53008D3DA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC5C4EE220F14F34008D3DA5 /* BaseListing.swift in Sources */,
+				CC5C4EE620F14F34008D3DA5 /* PlotPoint.swift in Sources */,
+				CC5C4EDB20F14F34008D3DA5 /* CompetitorsPoint.swift in Sources */,
+				CC5C4EF320F14F34008D3DA5 /* PopularityItem.swift in Sources */,
+				CC5C4ED020F14F34008D3DA5 /* HistoryAPI.swift in Sources */,
+				CC5C4EDF20F14F34008D3DA5 /* CompetitorsSimilarCars.swift in Sources */,
+				CC5C4ED120F14F34008D3DA5 /* VINDecoderAPI.swift in Sources */,
+				CC5C4EF820F14F34008D3DA5 /* TrendPoint.swift in Sources */,
+				CC5C4EEE20F14F34008D3DA5 /* Economy.swift in Sources */,
+				CC5C4ED220F14F34008D3DA5 /* InventoryAPI.swift in Sources */,
+				CC5C4ECE20F14F34008D3DA5 /* MarketAPI.swift in Sources */,
+				CC5C4EEC20F14F34008D3DA5 /* HistoricalListing.swift in Sources */,
+				CC5C4ED920F14F34008D3DA5 /* Location.swift in Sources */,
+				CC5C4ED820F14F34008D3DA5 /* ListingExtraAttributes.swift in Sources */,
+				CC5C4EF220F14F34008D3DA5 /* VinReport.swift in Sources */,
+				CC5C4ED720F14F34008D3DA5 /* Dealer.swift in Sources */,
+				CC5C4EE520F14F34008D3DA5 /* Mds.swift in Sources */,
+				CC5C4EE720F14F34008D3DA5 /* DealerReview.swift in Sources */,
+				CC5C4ECA20F14F34008D3DA5 /* APIHelper.swift in Sources */,
+				CC5C4EEB20F14F34008D3DA5 /* ModelError.swift in Sources */,
+				CC5C4ECC20F14F34008D3DA5 /* FacetsAPI.swift in Sources */,
+				CC5C4EFE20F14F34008D3DA5 /* Configuration.swift in Sources */,
+				CC5C4ED420F14F34008D3DA5 /* CodableHelper.swift in Sources */,
+				CC5C4ECF20F14F34008D3DA5 /* ListingsAPI.swift in Sources */,
+				CC5C4E6320F14E53008D3DA5 /* ViewController.swift in Sources */,
+				CC5C4EF420F14F34008D3DA5 /* ReviewComponents.swift in Sources */,
+				CC5C4EFC20F14F34008D3DA5 /* JSONEncodingHelper.swift in Sources */,
+				CC5C4EE420F14F34008D3DA5 /* FacetItem.swift in Sources */,
+				CC5C4EEF20F14F34008D3DA5 /* Build.swift in Sources */,
+				CC5C4ECD20F14F34008D3DA5 /* GraphsAPI.swift in Sources */,
+				CC5C4EF520F14F34008D3DA5 /* DepreciationPoint.swift in Sources */,
+				CC5C4ED320F14F34008D3DA5 /* DealerAPI.swift in Sources */,
+				CC5C4EEA20F14F34008D3DA5 /* SearchResponse.swift in Sources */,
+				CC5C4EE120F14F34008D3DA5 /* CompetitorsSameCars.swift in Sources */,
+				CC5C4ECB20F14F34008D3DA5 /* AlamofireImplementations.swift in Sources */,
+				CC5C4EF720F14F34008D3DA5 /* FuelEfficiency.swift in Sources */,
+				CC5C4EF620F14F34008D3DA5 /* RatingComponents.swift in Sources */,
+				CC5C4EDA20F14F34008D3DA5 /* ListingVDP.swift in Sources */,
+				CC5C4ED520F14F34008D3DA5 /* JSONEncodableEncoding.swift in Sources */,
+				CC5C4EDC20F14F34008D3DA5 /* Averages.swift in Sources */,
+				CC5C4EE320F14F34008D3DA5 /* SafetyRating.swift in Sources */,
+				CC5C4EED20F14F34008D3DA5 /* DepreciationStats.swift in Sources */,
+				CC5C4EDE20F14F34008D3DA5 /* DealersResponse.swift in Sources */,
+				CC5C4EE820F14F34008D3DA5 /* ComparisonPoint.swift in Sources */,
+				CC5C4EF920F14F34008D3DA5 /* Listing.swift in Sources */,
+				CC5C4EF120F14F34008D3DA5 /* DealerLandingPage.swift in Sources */,
+				CC5C4ED620F14F34008D3DA5 /* APIs.swift in Sources */,
+				CC5C4EF020F14F34008D3DA5 /* MakeModel.swift in Sources */,
+				CC5C4EFA20F14F34008D3DA5 /* ListingDebugAttributes.swift in Sources */,
+				CC5C4EFB20F14F34008D3DA5 /* Extensions.swift in Sources */,
+				CC5C4E6120F14E53008D3DA5 /* AppDelegate.swift in Sources */,
+				CC5C4EDD20F14F34008D3DA5 /* DealerRating.swift in Sources */,
+				CC5C4EFD20F14F34008D3DA5 /* Models.swift in Sources */,
+				CC5C4EE020F14F34008D3DA5 /* CompetitorsCarDetails.swift in Sources */,
+				CC5C4EE920F14F34008D3DA5 /* ListingMedia.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC5C4E6D20F14E56008D3DA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC5C4E7620F14E56008D3DA5 /* carfindTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC5C4E7820F14E56008D3DA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC5C4E8120F14E56008D3DA5 /* carfindUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC5C4E7320F14E56008D3DA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC5C4E5C20F14E53008D3DA5 /* carfind */;
+			targetProxy = CC5C4E7220F14E56008D3DA5 /* PBXContainerItemProxy */;
+		};
+		CC5C4E7E20F14E56008D3DA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC5C4E5C20F14E53008D3DA5 /* carfind */;
+			targetProxy = CC5C4E7D20F14E56008D3DA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC5C4E6420F14E53008D3DA5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC5C4E6520F14E53008D3DA5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC5C4E6920F14E56008D3DA5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC5C4E6A20F14E56008D3DA5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC5C4E8320F14E56008D3DA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC5C4E8420F14E56008D3DA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC5C4E8620F14E56008D3DA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16CA7019210781FB458F854A /* Pods-carfind.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = carfind/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomdaniel0x01.carfind;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC5C4E8720F14E56008D3DA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 003DE7F1F033A7375E9B71EF /* Pods-carfind.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = carfind/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomdaniel0x01.carfind;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CC5C4E8920F14E56008D3DA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = carfindTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomdaniel0x01.carfindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/carfind.app/carfind";
+			};
+			name = Debug;
+		};
+		CC5C4E8A20F14E56008D3DA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = carfindTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomdaniel0x01.carfindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/carfind.app/carfind";
+			};
+			name = Release;
+		};
+		CC5C4E8C20F14E56008D3DA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = carfindUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomdaniel0x01.carfindUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = carfind;
+			};
+			name = Debug;
+		};
+		CC5C4E8D20F14E56008D3DA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = carfindUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomdaniel0x01.carfindUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = carfind;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC5C4E5820F14E53008D3DA5 /* Build configuration list for PBXProject "carfind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC5C4E8320F14E56008D3DA5 /* Debug */,
+				CC5C4E8420F14E56008D3DA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC5C4E8520F14E56008D3DA5 /* Build configuration list for PBXNativeTarget "carfind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC5C4E8620F14E56008D3DA5 /* Debug */,
+				CC5C4E8720F14E56008D3DA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC5C4E8820F14E56008D3DA5 /* Build configuration list for PBXNativeTarget "carfindTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC5C4E8920F14E56008D3DA5 /* Debug */,
+				CC5C4E8A20F14E56008D3DA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC5C4E8B20F14E56008D3DA5 /* Build configuration list for PBXNativeTarget "carfindUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC5C4E8C20F14E56008D3DA5 /* Debug */,
+				CC5C4E8D20F14E56008D3DA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC5C4E5520F14E53008D3DA5 /* Project object */;
+}
